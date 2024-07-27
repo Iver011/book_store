@@ -1,0 +1,44 @@
+.main{
+    width: 100%;
+    height: 150px;
+    background-color: var(--newsletter);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conteiner{
+    
+    height: 100px;
+    width: 1200px;
+    padding: 20px;
+    
+
+}
+
+.link{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.link h3{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--black);
+}
+.link h3:hover{
+    text-decoration: underline;
+}
+.link h2{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--black);
+}
+.conteiner h1{
+    font-size: 24px;
+    font-weight: 500;
+}
+.linkstyle{
+    text-decoration: none;
+    color: inherit;
+}

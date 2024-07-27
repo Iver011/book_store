@@ -1,0 +1,145 @@
+.row{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+.id{
+    display: flex;
+    width: 30px;
+    height: 48px;
+}
+.title{
+    width: 100px;
+    height: 48px;
+}
+.edittitle{
+    width: 100px;
+    height: 48px;
+}
+.description{
+    height: 48px;
+    width: 200px;
+    overflow: hidden;
+    font-size: 10px;
+    color: var(--text);
+}
+.editdescription{
+    height: 48px;
+    width: 200px;
+    overflow: hidden;
+    font-size: 10px;
+    color: var(--text);
+}
+.author{
+    height: 48px;
+    width: 120px;
+   
+}
+.editauthor{
+    height: 48px;
+    width: 120px;
+}
+
+.price{
+    height: 48px;
+    width: 30px;
+}
+.editprice{
+    height: 48px;
+    width: 30px;
+}
+.editorial{
+    height: 48px;
+    width: 100px;
+}
+.editeditorial{
+    height: 48px;
+    width: 100px;
+}
+.numPages{
+    height: 48px;
+    width: 30px;
+}
+.editnumpages{
+    height: 48px;
+    width: 30px;
+}
+.bookbinding{
+    height: 48px;
+    width: 100px;
+}
+.editbookbinding{
+    height: 48px;
+    width: 100px;
+
+}
+.copies{
+    height: 48px;
+    width: 30px;
+}
+.editcopies{
+    height: 48px;
+    width: 30px;
+
+}
+.mas{
+    height: 48px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.row div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: var(--text);
+
+}
+.row i{
+    cursor: pointer;
+}
+.delete{
+    background-color: transparent;
+    border: 0;
+}
+.row input{
+    background-color: transparent;
+    border: none;
+}
+
+.edit-btn{
+    border: 0;
+    background-color: transparent;
+    transition: transform 0.3s ease, color 0.3s ease;
+
+}
+.edit-btn:hover{
+    transform: scale(1.5);
+}
+.delete-btn{
+    border: 0;
+    background-color: transparent;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.delete-btn:hover{
+    transform: scale(1.5);
+}
+.save{
+    border: 0;
+    background-color: transparent;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.save:hover{
+    transform: scale(1.9);
+}
+.cancel{
+    border: 0;
+    background-color: transparent;
+    margin-left: 15px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.cancel:hover{
+    transform: scale(1.9);
+}

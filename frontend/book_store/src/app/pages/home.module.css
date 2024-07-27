@@ -1,0 +1,10 @@
+.bestseller{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.income{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

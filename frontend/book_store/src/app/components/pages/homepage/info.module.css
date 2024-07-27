@@ -1,0 +1,103 @@
+.conteiner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    height: 420px;
+    width: 100%;
+    gap: 20px;
+    padding: 90px;
+}
+.logo h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+.logo img{
+    height: 44px;
+    width: 44px;
+}
+.first{
+    height: 160px;
+    width: 272px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+.first i{
+    cursor: pointer;
+    font-size: 2rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.first p{
+    font-size: 14px;
+    
+}
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+
+}
+.second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 172px;
+    
+    
+    
+}
+.content{
+    padding: 40px;
+    
+}
+.second h2{
+    color: var(--h2);
+    font-weight: 100;
+    font-size: 14px;
+
+}
+
+.second h4{
+    color: var(--h4);
+    font-weight: 120;
+    font-size: 15px;
+    padding: 5px;
+}
+.second h4:hover{
+    text-decoration: underline;
+}
+
+.fifth h2{
+    color: var(--h2);
+    font-weight: 100;
+    font-size: 14px;
+
+}
+.fifth i{
+    cursor: pointer;
+    font-size: 2rem;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    padding: 65px;
+}
+.fifth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}

@@ -1,0 +1,17 @@
+.conteiner{
+    width: 330px;
+    height: 70px;
+}
+
+.conteiner input{
+    width: 330px;
+    height: 45px;
+    border: 1px solid;
+    padding-left: 20px;
+}
+.conteiner h3{
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: 400;
+   
+}

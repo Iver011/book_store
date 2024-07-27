@@ -1,0 +1,41 @@
+.row{
+    display: flex;
+    
+    justify-content: space-between;
+}
+.id{
+    display: flex;
+    width: 30px;
+    height: 48px;
+}
+.userid{
+    width: 80px;
+    height: 48px;
+}
+.author{
+    height: 48px;
+    width: 100px;
+}
+.orderdate{
+    height: 48px;
+    width: 60px;
+}
+.title{
+    height: 48px;
+    width: 130px;
+}
+.mas{
+    height: 48px;
+    width: 30px;
+}
+.row div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: var(--text);
+
+}
+.row i{
+    cursor: pointer;
+}

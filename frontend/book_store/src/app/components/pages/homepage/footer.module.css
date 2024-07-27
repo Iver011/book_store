@@ -1,0 +1,50 @@
+
+.footer{
+    background-color: var(--newsletter);
+    height: 200px;
+    width: 100%;
+
+}
+
+.newsletter{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    height: 100%;
+}
+
+.conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.register button{
+    width: 300px;
+    height: 30px;
+    background-color: var(--blue );
+    color: var(--white);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.input input{
+    height: 35px;
+    width: 300px;
+    padding: 10px;
+    background-color: transparent;
+    border-color: var(--gray);
+    border-width: 1px;
+    border-radius: 5px;
+}

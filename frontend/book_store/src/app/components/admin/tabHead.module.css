@@ -1,0 +1,17 @@
+
+.tabhead{
+    display: grid;
+    grid-template-columns: 30px 100px 120px 100px 30px 30px 100px 30px 200px 30px;
+    justify-content: space-between;
+    
+}
+.tabhead div h1{
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--gray);
+}
+.tabhead div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

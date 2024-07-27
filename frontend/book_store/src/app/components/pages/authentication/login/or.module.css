@@ -1,0 +1,14 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 330px;
+    height: 30px;
+    gap: 20px;
+}
+.linea{
+    border: 1;
+    height: 2px;
+    background-color: black;
+    width: 120px;
+}

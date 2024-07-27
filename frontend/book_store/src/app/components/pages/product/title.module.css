@@ -1,0 +1,24 @@
+.main{
+    height: 80px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-left: 12rem;
+    padding-top: 0.3rem;
+    background-color: var(--newsletter);
+}
+.main p{
+    color: var(--gray);
+
+}
+.main p:hover{
+    text-decoration: underline;
+}
+.main h3{
+    font-weight: 500;
+    font-size: 15px;
+}
+.link{
+    text-decoration: none;
+    color: inherit;
+}

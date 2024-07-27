@@ -1,0 +1,19 @@
+.button{
+    width: 140px;
+    height: 40px;
+    background-color: var(--bluesea);
+    border: none;
+    padding: 5px;
+    color: var(--newsletter);
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+}
+.h1{
+    font-size: 14px;
+    color: var(--white);
+    font-weight: 500;
+}

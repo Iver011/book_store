@@ -1,0 +1,29 @@
+
+.main hr{
+    width: 100%;
+}
+.products{
+    background-color: var(--newsletter);
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    border-radius: 1rem;
+    gap: 30px;
+}
+.pageNumbers{
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+    
+
+}
+.pageNumbers li{
+    list-style-type: none;
+}
+.indexbutton{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 13px;
+}

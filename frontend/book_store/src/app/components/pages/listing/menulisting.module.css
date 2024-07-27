@@ -1,0 +1,56 @@
+.mainConteiner{
+    width: 250px ;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    border: 0.1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 100px;
+
+}
+
+.categorias{
+    height: 400px;
+    
+}
+.lista{
+    margin-top: 50px;
+    padding: 20px;
+    height: 500px;
+    margin-bottom: 20px;
+}
+.li{
+    padding: 5px;
+}
+.categorias h1{
+    font-size: 14px;
+    color: var(--blue);
+    font-weight: 500;
+    gap: 20px;
+}
+.li{
+    display: flex;
+    gap: 20px;
+}
+.li h2{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.price h1{
+    font-size: 14px;
+    color: var(--blue);
+    font-weight: 500;   
+}
+.titleprice{
+    font-size: 14px;
+    color: var(--blue);
+    font-weight: 500;   
+}
+.listaprecios{
+    margin-top: 20px;
+    padding: 20px;
+}
