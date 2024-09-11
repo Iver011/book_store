@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import style from "./addProduct.module.css";
-import { useAuth } from "@/app/login/authContext";
+import { useSession } from "next-auth/react";
+
 function AddProduct() {
     const [selectFile,setSelectFile]=useState(null)
+    const {data:session,status}=useSession()
     const handleFileChange = (event) => {
         setSelectFile(event.target.files[0]);
       };
-      const { token } = useAuth();
   const [formData, setFormData] = useState({
     title: "",
     price: "",
@@ -33,11 +34,13 @@ function AddProduct() {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Bearer ${token}`  //sto especifica que el contenido de la solicitud es de tipo JSON.
+        "Authorization": `Bearer ${session?.user?.access_token}`  //sto especifica que el contenido de la solicitud es de tipo JSON.
       },
       body: JSON.stringify(formData),
     });
-
+    if (!response.ok){
+      console.log()
+    }
     if (response.ok) {
       const newBook = await response.json();
       console.log("Book created:", newBook);

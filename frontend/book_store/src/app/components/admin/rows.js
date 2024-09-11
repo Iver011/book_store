@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import style from "./rows.module.css";
-import { useAuth } from "@/app/login/authContext";
-
+import { useSession } from "next-auth/react";
 function Rows({
   id,
   title,
@@ -14,8 +13,7 @@ function Rows({
   description,
   fetchData,
 }) {
-  
-  const { token } = useAuth(); // Obtener el token del contexto
+  const {data:session,status}=useSession();
   const [isEditing, setIsEditing] = useState(false);
   const [updatedData, setUpdatedData] = useState({
     title: title,
@@ -41,6 +39,7 @@ function Rows({
       document.removeEventListener("keydown", handleEscape);
     };
   }, []);
+  console.log(session)
 
   const handleEdit = () => {
     setUpdatedData({
@@ -61,7 +60,7 @@ function Rows({
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Bearer ${token}` // Añadir el token a las cabeceras
+        "Authorization": `Bearer ${session?.user?.access_token}` // Añadir el token a las cabeceras
       },
       body: JSON.stringify(updatedData),
     })
@@ -70,7 +69,9 @@ function Rows({
         fetchData();
       })
       .catch((error) => console.error("Error al editar libro", error));
+      console.log(session?.user?.error)
   };
+  
 
   const cancelEdit = () => {
     setIsEditing(false);
@@ -97,7 +98,7 @@ function Rows({
         fetch(`http://127.0.0.1:5000/api/books/${id}`, {
             method: "DELETE",
             headers:{
-              "Authorization": `Bearer ${token}` // Añadir el token a las cabeceras
+              "Authorization": `Bearer ${session?.user?.access_token}` // Añadir el token a las cabeceras
             }
           })
             .then(() => {

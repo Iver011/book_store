@@ -1,4 +1,4 @@
-import MenuAdmin from "./menuAdmin";
+
 import style from "./adminProducts.module.css";
 import TabAdmin from "./tabAdmin";
 import TabHead from "./tabHead";
@@ -65,7 +65,7 @@ function AdminProducts() {
           <ul className={style.pageNumbers}>
             {Array.from({ length: Math.ceil(data.length / itemsPerPage) }).map((_, index) => (
               <li key={index} className={currentPage === index + 1 ? style.activePage : ''}>
-                <button className={style.indexbutton} onClick={() => paginate(index + 1)}>
+                <button className={`${style.indexbutton} ${currentPage === index + 1 ? style.currentPage : ''}`} onClick={() => paginate(index + 1)}>
                   {index + 1}
                 </button>
               </li>

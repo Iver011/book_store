@@ -5,41 +5,34 @@ import { useAuth } from "../login/authContext";
 import style from "./report.module.css"
 const ReportPDF = () => {
   const [data, setData] = useState([]);
-  const { token } = useAuth();
+
 
   useEffect(() => {
-    fetchData();
+    fetch("http://127.0.0.1:5000/api/books").
+    then(res=>res.json()).
+    then(data=>{
+        setData(data)
+    })
   }, []);
-
-  const fetchData = async () => {
-    try {
-      const response = await fetch("http://127.0.0.1:5000/api/solicitudes", {
-        headers: {
-          "Authorization": `Bearer ${token}`
-        }
-      });
-      const result = await response.json();
-      setData(result);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
+    console.log(data)
+  
 
   const generatePDF = () => {
     const doc = new jsPDF();
 
     doc.text("Reporte de Libros", 14, 20);
     doc.autoTable({
-      head: [['ID', 'Nombre', 'Apellido', 'Email', 'Telefono','Solicitud']],
-      body: data.map(book => [book.id, book.nombre_cliente, book.apellido_cliente, 
-          book.email, book.telefono, book.solicitud_cliente]),
+      head: [['ID', 'Titulo', 'Autor', 'Editorial', 'Precio','Disponibles']],
+      body: data.map(book => [book.id, book.title, book.author, 
+          book.editorial, book.price, book.copies]),
       startY: 30,
     });
 
-    doc.save("reporte_Sol.pdf");
+    doc.save("reporte_libros.pdf");
   };
 
   return (
+
     <div className={style.report}>
       
       <button className={style.button} onClick={generatePDF}>Descargar reporte PDF</button>

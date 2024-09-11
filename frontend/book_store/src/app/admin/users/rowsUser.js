@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import style from "./rowsUser.module.css";
-import { useAuth } from "@/app/login/authContext";
+import { useAuth } from "../../login/authContext";
 function RowsUser({
   id,
   username,

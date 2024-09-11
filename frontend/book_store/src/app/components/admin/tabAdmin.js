@@ -1,6 +1,5 @@
 import { useState } from "react";
 import style from "./tabAdmin.module.css"
-import TabHead from "./tabHead";
 import Link from "next/link";
 import ReportPDF from "../report";
 

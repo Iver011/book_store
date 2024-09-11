@@ -1,3 +1,4 @@
+'use client'
 import style from "./product.module.css"
 import TopMenu from "../topMenu";
 import Options from "../options";
@@ -8,6 +9,7 @@ import Detail from "./detail";
 import Info from "../homepage/info";
 import Footer from "../homepage/footer";
 import { useEffect, useState } from "react";
+
 function Product({id}){
 
     const [data,setData]=useState([])

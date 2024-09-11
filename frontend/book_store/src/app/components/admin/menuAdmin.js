@@ -1,5 +1,7 @@
+'use client'
 import style from "./menuAdmin.module.css"
 import Link from "next/link";
+import { signOut } from "next-auth/react";
 function MenuAdmin(){
 
     return(
@@ -33,7 +35,8 @@ function MenuAdmin(){
             </Link>
         </div>
         <Link className={style.link} href="/">
-        <div className={style.exit}>
+        <div className={style.exit} onClick={()=>signOut()}>
+            
         <i class="fas fa-door-open"></i>
         <h2>Salir  </h2>
        

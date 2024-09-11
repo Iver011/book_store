@@ -20,17 +20,18 @@ import MainProduct from './components/admin/mainProduct';
 import ListingPage from './books/page';
 import LoginPage from './login/page';
 import { AuthProvider } from './login/authContext';
+import SessionAuthProvider from '../context/SessionAuthProvider';
 export default function Home() {
   const [page,setPage]=useState(false)
   const [footer,setFooter]=useState(true)
   return (
     
-    <AuthProvider>
+    <SessionAuthProvider>
     <main className={styles.main}>
         
         <HomePage></HomePage>
       </main>
-      </AuthProvider>
+      </SessionAuthProvider>
      
       
   );

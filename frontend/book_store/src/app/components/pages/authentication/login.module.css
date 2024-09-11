@@ -41,13 +41,13 @@
     height: 70px;
 }
 
-.conteiner input{
+.input{
     width: 330px;
     height: 45px;
     border: 1px solid;
     padding-left: 20px;
 }
-.conteiner h3{
+.h3{
     color: var(--gray);
     font-size: 14px;
     font-weight: 400;
@@ -56,7 +56,7 @@
 .adm{
 
         height: 44px;
-    width: 320px;
+        width: 330px;
         background-color: var(--black);
         color: var(--white);
         border: none;
@@ -74,4 +74,13 @@
     display: flex;
     flex-direction: column;
     gap:20px
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 1.5rem;
+    align-items: center;
 }

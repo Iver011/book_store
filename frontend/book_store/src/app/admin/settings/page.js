@@ -1,6 +1,6 @@
 'use client'
 
-import MenuAdmin from "@/app/components/admin/menuAdmin";
+import MenuAdmin from "../../components/admin/menuAdmin";
 import style from "./page.module.css"
 import { useEffect, useState } from "react";
 

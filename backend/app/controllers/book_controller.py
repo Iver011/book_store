@@ -67,7 +67,7 @@ def update_book(id):
         return jsonify({"error": "Libro no encontrado"}), 404
 
     data = request.json
-
+    
     print("Received data for update:", data)
 
     title = data.get("title")

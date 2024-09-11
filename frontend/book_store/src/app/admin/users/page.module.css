@@ -1,12 +1,10 @@
 .userMain{
     background-color: var(--white);
-    display: grid;
-    grid-template-columns: 1fr 2fr;    
-    justify-content: center;
+   display:  flex;
+   justify-content: center;
     padding: 50px;
-    gap: 10px;
-    width: 100%;
-    height: 100%;   
+    gap: 40px;
+    height: 100vh;  
 
 }
 .products{
@@ -15,6 +13,8 @@
     padding: 50px;
     background-color: var(--newsletter);
     gap: 20px;
+    border-radius: 20px;
+    width: 100vh;
     
 }
 .products h1{

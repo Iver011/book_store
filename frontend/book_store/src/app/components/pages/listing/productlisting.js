@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import BookCard from '../homepage/bookCard';
 import style from './productlisting.module.css'; // Asegúrate de ajustar la ruta al archivo de estilos correctamente
-import AllBooksFetcher from '@/app/hooks/useBooks';
+
 import Link from 'next/link';
 const YourComponent = () => {
 

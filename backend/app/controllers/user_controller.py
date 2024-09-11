@@ -43,4 +43,4 @@ def login():
         access_token=create_access_token(identity={"username":email,"role":user.role})
         return jsonify(access_token=access_token),200
     else: 
-        return jsonify({"error":"Credeciales incorrectas"}),401
+        return jsonify({"error":"Credeciales no validas"}),401

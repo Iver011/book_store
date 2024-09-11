@@ -2,10 +2,10 @@
 
 import style from "./page.module.css"
 import { useState,useEffect } from "react";
-import TabAdmin from "@/app/components/admin/tabAdmin";
-import TabHead from "@/app/components/admin/tabHead";
+import TabAdmin from "../../components/admin/tabAdmin";
+import TabHead from "../../components/admin/tabHead";
 import RowsUser from "./rowsUser";
-import MenuAdmin from "@/app/components/admin/menuAdmin";
+import MenuAdmin from "../../components/admin/menuAdmin";
 
 function users() {
   const [currentPage, setCurrentPage] = useState(1);

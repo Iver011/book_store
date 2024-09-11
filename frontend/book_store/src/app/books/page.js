@@ -6,6 +6,7 @@ import ListingMain from "../components/pages/listing/listingMain";
 import Info from "../components/pages/homepage/info";
 import TopMenu from "../components/pages/topMenu";
 import { useState } from "react";
+
 function ListingPage(){
 
     const [footer,setFooter]=useState(true)

@@ -8,12 +8,13 @@ import Button from "./login/button";
 import { useEffect, useState } from "react";
 
 function Register(){
-   const [formData,setFormData]=useState({
+    const [erros,setErrors]=useState([])
+    const [formData,setFormData]=useState({
         username:"",
         email:"",
         password:"",
         role:["customer"]
-   });
+    });
 
    const [error,setError]=useState("")
    const handleChange=(e)=>{

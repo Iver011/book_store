@@ -9,6 +9,7 @@
     flex-direction: column;
     border-radius: 1rem;
     gap: 30px;
+    height: 90vh;
 }
 .pageNumbers{
     display: flex;
@@ -26,4 +27,8 @@
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 13px;
+}
+.currentPage{
+   box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 1);
+ 
 }
